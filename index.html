@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styles.css">
+		<script src="app.js" defer></script>
+		<title>Sketch the Etch</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<p>Sketch the Etch! <span id="small-text">(hold shift to erase)</span></p>
+			</div>
+
+			<div class="options">
+				<div id="grid-slider">
+					<input type="range" id="grid-size-slider" min="4" max="32" step="4" value="16" >
+					<label for="grid-size-slider">Grid Size: <span id="grid-size-value-1">16</span>x<span
+							id="grid-size-value-2">16</span></label>
+				</div>
+				<div class="color-selector">
+					<button id="boring">Boring</button>
+					<button id="fun">Fun!</button>
+				</div>
+				<div id="reset">
+					<button type="submit" id="reset-btn">Reset</button>
+				</div>
+			</div>
+
+			<div class="canvas"></div>
+		</div>
+	</body>
+</html>

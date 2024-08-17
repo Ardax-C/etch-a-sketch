@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Honk&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Matemasie&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 85vh;
+    background-color: #1F2937;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    background-color: #101f64;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 10px #de40ef;
+}
+
+.header p, .header span {
+    background-color: #101f64;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+            "MORF" 15,
+            "SHLN" 50;
+    font-size: 3rem;
+}
+
+.header span {
+    font-size: .9rem;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 10%;
+}
+
+#grid-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+    height: 5%;
+    width: 100px;
+}
+
+#grid-slider label {
+    color: white;
+    width: 160px;
+}
+
+.color-selector {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    gap: 2px;
+}
+
+.color-selector button, #reset-btn {
+    width: 200px;
+    height: 50px;
+    color: white;
+    border: 1px solid #ff4081;
+}
+
+#reset-btn {
+    border: 1px solid #00ff9c;
+}
+
+.canvas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 640px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    border: 1px solid #0f93e8;
+    transition: transform 0.2s ease-in-out;
+}
+
+.pop-effect {
+    transform: scale(1.2);
+}
